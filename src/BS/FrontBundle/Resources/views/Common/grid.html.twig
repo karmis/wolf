@@ -1,0 +1,61 @@
+{% if entities is not defined %}
+    {% set entities = [] %}
+{% endif %}
+
+<br/><br/>
+<h3 class="bs-caption">
+    {{ caption|default('Список') }}
+</h3>
+
+<br/>
+{% if entities|length > 0 %}
+
+    <div id="grid" class="row">
+
+        {% for key,entity in entities %}
+            {% if entity.slug is defined %}
+                {% set path_route = path(path_prefix~'_show', {id: entity.id, slug:entity.slug})  %}
+            {% else %}
+                {% set path_route = path(path_prefix~'_show', {id: entity.id}) %}
+            {% endif %}
+
+            <div class="item">
+                <div class="panel panel-default panel-grid-bs text-center">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center">
+                            <a href="{{ path_route }}">
+                                {{ entity.caption }}
+                            </a>
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                {% if entity.media %}
+                                    <a data-toggle="lightbox" data-target="#lb_id_{{ key }}" class="unlink lb">
+                                        {% thumbnail entity.media, 'small' with {class:'lazy'} %} {# render the related thumbnail #}
+                                    </a>
+                                {% endif %}
+                            </div>
+                        </div>
+                        {{ entity.smallContent|truncate(truncate|default(300)) }}
+                    </div>
+
+                    <a href="{{ path_route }}" class="btn btn-default"
+                       role="button" style="margin: 5px;padding: 10px;">Узнать подробнее</a>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+    <div class="clearfix"></div>
+    <div class="navigation pull-right">
+        {{ knp_pagination_render(entities) }}
+    </div>
+    <div class="clearfix"></div>
+{% else %}
+    <div class="alert alert-warning" role="alert">
+        <strong>404</strong> Не найдено ни одной записи
+    </div>
+{% endif %}
+
+<div class="line"></div>

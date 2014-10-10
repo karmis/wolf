@@ -1,0 +1,72 @@
+<?php
+
+namespace BS\FrontBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+use Sonata\MediaBundle\Model\MediaInterface;
+use Symfony\Component\Validator\Constraints as Assert;
+
+/**
+ * Blog
+ *
+ * @ORM\Table()
+ * @ORM\Entity
+ */
+class Blog
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="caption", type="string", length=255)
+     */
+    private $caption;
+
+    /**
+     * @var string
+     * @Assert\Regex(
+     *     pattern="/^[A-Za-z0-9-]+$/",
+     *     match=true,
+     *     message="Адрес должен содержать только латинске буквы"
+     * )
+     * @ORM\Column(name="slug", type="string", length=255, unique=true)
+     */
+    private $slug;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="smallContent", type="text")
+     */
+    private $smallContent;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="content", type="text")
+     */
+    private $content;
+
+    /**
+     * @var boolean
+     *
+     * @ORM\Column(name="published", type="boolean", nullable=true)
+     */
+    private $published;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="Application\Sonata\MediaBundle\Entity\Gallery")
+     * @ORM\JoinColumn(name="gallery", referencedColumnName="id")
+     */
+    private $gallery;
+
+
+}

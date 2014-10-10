@@ -1,0 +1,159 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: karmis
+ * Date: 10.10.14
+ * Time: 0:10
+ */
+
+namespace BS\FrontBundle\Entity;
+use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
+use Iphp\FileStoreBundle\Mapping\Annotation as FileStore;
+
+/**
+ * Gallery
+ *
+ * @ORM\Entity
+ * @FileStore\Uploadable
+ * @ORM\Table()
+ */
+class Gallery {
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+
+
+    /**
+     * @ORM\ManyToOne(targetEntity="Blog", inversedBy="gallery")
+     * @ORM\JoinColumn(name="photo_id", referencedColumnName="id")
+     */
+    private $blog;
+
+    /**
+     * @var \Application\Sonata\MediaBundle\Entity\Media
+     * @ORM\ManyToOne(targetEntity="Application\Sonata\MediaBundle\Entity\Media", cascade={"persist"}, fetch="LAZY")
+     */
+    private $photo;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="caption", type="string", nullable=true)
+     */
+    private $caption;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="description", type="text", nullable=true)
+     */
+    private $description;
+
+    /**
+     * Get id
+     *
+     * @return integer 
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set caption
+     *
+     * @param string $caption
+     * @return Gallery
+     */
+    public function setCaption($caption)
+    {
+        $this->caption = $caption;
+
+        return $this;
+    }
+
+    /**
+     * Get caption
+     *
+     * @return string 
+     */
+    public function getCaption()
+    {
+        return $this->caption;
+    }
+
+    /**
+     * Set description
+     *
+     * @param string $description
+     * @return Gallery
+     */
+    public function setDescription($description)
+    {
+        $this->description = $description;
+
+        return $this;
+    }
+
+    /**
+     * Get description
+     *
+     * @return string 
+     */
+    public function getDescription()
+    {
+        return $this->description;
+    }
+
+    /**
+     * Set blog
+     *
+     * @param \BS\FrontBundle\Entity\Blog $blog
+     * @return Gallery
+     */
+    public function setBlog(\BS\FrontBundle\Entity\Blog $blog = null)
+    {
+        $this->blog = $blog;
+
+        return $this;
+    }
+
+    /**
+     * Get blog
+     *
+     * @return \BS\FrontBundle\Entity\Blog 
+     */
+    public function getBlog()
+    {
+        return $this->blog;
+    }
+
+    /**
+     * Set photo
+     *
+     * @param \Application\Sonata\MediaBundle\Entity\Media $photo
+     * @return Gallery
+     */
+    public function setPhoto(\Application\Sonata\MediaBundle\Entity\Media $photo = null)
+    {
+        $this->photo = $photo;
+
+        return $this;
+    }
+
+    /**
+     * Get photo
+     *
+     * @return \Application\Sonata\MediaBundle\Entity\Media 
+     */
+    public function getPhoto()
+    {
+        return $this->photo;
+    }
+}
