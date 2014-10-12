@@ -5,7 +5,7 @@ sonata_media:
     #    gallery: MyVendor\MediaBundle\Entity\Gallery
     #    gallery_has_media: MyVendor\MediaBundle\Entity\GalleryHasMedia
     default_context: default
-    db_driver: doctrine_orm # or doctrine_mongodb, doctrine_phpcr
+    db_driver: doctrine_orm
     providers:
         image:
             resizer: sonata.media.resizer.square
@@ -23,20 +23,30 @@ sonata_media:
             formats:
                 small: { width: 100 , quality: 70}
                 big:   { width: 500 , quality: 70}
-        blog_avatar:
-            providers:
-                - sonata.media.provider.image
 
-            formats:
-                small: { width: 250 , quality: 85}
-                big:   { width: 1000 , quality: 90}
-
-        blog_photo:
+        events_image:
+            download:
+                strategy: sonata.media.security.superadmin_strategy
+                mode: http
             providers:
-                - sonata.media.provider.image
+                  - sonata.media.provider.image
             formats:
-                small: { width: 250 , quality: 85}
-                big:   { width: 1000 , quality: 90}
+                xsmall: { width: 80 , quality: 60}
+                small: { width: 250 , quality: 70}
+                medium: { width: 550 , quality: 85}
+                big:   { width: 1000 , quality: 100}
+
+        events_video:
+            download:
+                strategy: sonata.media.security.superadmin_strategy
+                mode: http
+            providers:
+                - sonata.media.provider.dailymotion
+                - sonata.media.provider.youtube
+            formats:
+                small: { width: 250 , quality: 70}
+                medium: { width: 550 , quality: 85}
+                big:   { width: 1000 , quality: 100}
     cdn:
         server:
             path: /uploads/media # http://media.sonata-project.org/

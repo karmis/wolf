@@ -64,11 +64,15 @@ class Blog
 
     /**
      * @ORM\ManyToOne(targetEntity="Application\Sonata\MediaBundle\Entity\Gallery")
-     * @ORM\JoinColumn(name="gallery", referencedColumnName="id")
+     * @ORM\JoinColumn(name="photo_gallery", referencedColumnName="id")
      */
-    private $gallery;
+    private $photoGallery;
 
-
+    /**
+     * @ORM\ManyToOne(targetEntity="Application\Sonata\MediaBundle\Entity\Gallery")
+     * @ORM\JoinColumn(name="video_gallery", referencedColumnName="id")
+     */
+    private $videoGallery;
 
     /**
      * Get id
@@ -196,25 +200,48 @@ class Blog
     }
 
     /**
-     * Set gallery
+     * Set photoGallery
      *
-     * @param \Application\Sonata\MediaBundle\Entity\Gallery $gallery
+     * @param \Application\Sonata\MediaBundle\Entity\Gallery $photoGallery
      * @return Blog
      */
-    public function setGallery(\Application\Sonata\MediaBundle\Entity\Gallery $gallery = null)
+    public function setPhotoGallery(\Application\Sonata\MediaBundle\Entity\Gallery $photoGallery = null)
     {
-        $this->gallery = $gallery;
+        $this->photoGallery = $photoGallery;
 
         return $this;
     }
 
     /**
-     * Get gallery
+     * Get photoGallery
      *
      * @return \Application\Sonata\MediaBundle\Entity\Gallery 
      */
-    public function getGallery()
+    public function getPhotoGallery()
     {
-        return $this->gallery;
+        return $this->photoGallery;
+    }
+
+    /**
+     * Set videoGallery
+     *
+     * @param \Application\Sonata\MediaBundle\Entity\Gallery $videoGallery
+     * @return Blog
+     */
+    public function setVideoGallery(\Application\Sonata\MediaBundle\Entity\Gallery $videoGallery = null)
+    {
+        $this->videoGallery = $videoGallery;
+
+        return $this;
+    }
+
+    /**
+     * Get videoGallery
+     *
+     * @return \Application\Sonata\MediaBundle\Entity\Gallery 
+     */
+    public function getVideoGallery()
+    {
+        return $this->videoGallery;
     }
 }

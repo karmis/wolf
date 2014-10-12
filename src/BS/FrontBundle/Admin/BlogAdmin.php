@@ -42,9 +42,6 @@ class BlogAdmin extends Admin
             ->add('smallContent', null, array(
                 'label' => 'form.smallContent'
             ))
-//            ->add('media', 'sonata_media_list',array(
-//                'label' => 'form.media'
-//            ))
             ->add('published', null, array(
                 'label' => 'form.published'
             ))
@@ -89,17 +86,29 @@ class BlogAdmin extends Admin
 //                    )
 //                )
             ))
-            ->add('gallery', 'sonata_type_model_list', array(
-                    'required' => false
+            ->add('photoGallery', 'sonata_type_model_list', array(
+                    'required' => false,
+                    'label' => 'form.photoGallery',
                 ),
                 array(
                     'link_parameters' => array(
-                        'context' => 'blog_photo'
+                        'context' => 'events_image'
+                    )
+                )
+            )
+            ->add('videoGallery', 'sonata_type_model_list', array(
+                    'required' => false,
+                    'label' => 'form.videoGallery',
+                ),
+                array(
+                    'link_parameters' => array(
+                        'context' => 'events_video'
                     )
                 )
             )
             ->add('published', null, array(
                 'label' => 'form.published',
+                'data' => true
             ));
     }
 
@@ -117,11 +126,6 @@ class BlogAdmin extends Admin
             ))
             ->add('smallContent', null, array(
                 'label' => 'form.smallContent'
-            ))
-            ->add('photos', 'sonata_media_type', array(
-                'provider' => 'sonata.media.provider.image',
-                'context'  => 'blog',
-                'label' => 'form.media',
             ))
             ->add('published', null, array(
                 'label' => 'form.published',

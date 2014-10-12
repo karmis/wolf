@@ -1,0 +1,22 @@
+<article id="bs-block-{{ secId }}" class="section-wrapper clearfix"
+         data-custom-background-img="{{ asset(secBg) }}">
+    <div class="content-wrapper clearfix">
+        <div class="col-sm-11 pull-right">
+
+            <h1 class="section-title">{{ secCaption|raw }}</h1>
+
+            <!-- feature columns -->
+            <section class="feature-columns row clearfix">
+                {% if secType == 'text' %}
+                    Kenny is sick.
+                {% elseif secType == 'grid' %}
+                    You killed Kenny! You bastard!!!
+                {% elseif secType == 'form' %}
+                    You killed Kenny! You bastard!!!
+                {% else %}
+                    Kenny looks okay --- so far
+                {% endif %}
+            </section>
+        </div>
+    </div>
+</article>

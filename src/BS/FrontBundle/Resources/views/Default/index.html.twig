@@ -1,10 +1,16 @@
 {% extends 'BSFrontBundle::layout.html.twig' %}
 {% block content %}
-    {% include 'BSFrontBundle::Intro/intro.html.twig' %}
-    {% include 'BSFrontBundle::Action/action.html.twig' %}
-    {% include 'BSFrontBundle::Text/text.html.twig' %}
-    {% include 'BSFrontBundle::Carousel/carousel.html.twig' %}
-    {% include 'BSFrontBundle::Grid/grid.html.twig' %}
-    {% include 'BSFrontBundle::Featured/featured.html.twig' %}
-    {% include 'BSFrontBundle::Contact/contact.html.twig' %}
+    {% include 'BSFrontBundle::Index/index.html.twig' %}
+    {% include 'BSFrontBundle::Action/index.html.twig' %}
+    {% include 'BSFrontBundle::Blog/index.html.twig' %}
+    {% include 'BSFrontBundle::Event/index.html.twig' %}
+    {% include 'BSFrontBundle::Order/form.html.twig' %}
+
+
+    {#{% include 'BSFrontBundle::Action/index.html.twig' %}#}
+    {#{% include 'BSFrontBundle::_Text/text.html.twig' %}#}
+    {#{% include 'BSFrontBundle::_Carousel/carousel.html.twig' %}#}
+    {#{% include 'BSFrontBundle::_Grid/grid.html.twig' %}#}
+    {#{% include 'BSFrontBundle::_Featured/featured.html.twig' %}#}
+    {#{% include 'BSFrontBundle::_Contact/contact.html.twig' %}#}
 {% endblock content %}

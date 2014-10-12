@@ -1,3 +1,7 @@
+bs_front_blog:
+    resource: "@BSFrontBundle/Resources/config/routing/blog.yml"
+    prefix:   /blog
+
 main:
     path:     /
     defaults: { _controller: BSFrontBundle:Default:index }

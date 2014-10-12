@@ -24,7 +24,9 @@ class DefaultController extends Controller
 //        );
 
         return $this->render('BSFrontBundle:Default:index.html.twig', array(
-//            'blogs' => $paginationBlogs
+            'entities' => array(
+                'blogs' => array()
+            )
         ));
     }
 }

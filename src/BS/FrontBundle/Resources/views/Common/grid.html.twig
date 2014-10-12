@@ -2,60 +2,55 @@
     {% set entities = [] %}
 {% endif %}
 
-<br/><br/>
-<h3 class="bs-caption">
-    {{ caption|default('Список') }}
-</h3>
-
-<br/>
 {% if entities|length > 0 %}
+    <!-- grid -->
+    <section class="grid row clearfix clearfix-for-2cols">
 
-    <div id="grid" class="row">
+        {% for entity in entities %}
 
-        {% for key,entity in entities %}
-            {% if entity.slug is defined %}
-                {% set path_route = path(path_prefix~'_show', {id: entity.id, slug:entity.slug})  %}
-            {% else %}
-                {% set path_route = path(path_prefix~'_show', {id: entity.id}) %}
-            {% endif %}
+            <!-- grid item -->
+            <div class="grid-item col-md-6">
+                <div class="item-content clearfix">
+                    <img src="{{ asset(pRes~"/images/bg/bg4.jpg") }}" alt="" width="350"/>
 
-            <div class="item">
-                <div class="panel panel-default panel-grid-bs text-center">
-                    <div class="panel-heading">
-                        <h3 class="panel-title text-center">
-                            <a href="{{ path_route }}">
-                                {{ entity.caption }}
-                            </a>
-                        </h3>
-                    </div>
-                    <div class="panel-body">
-                        <div class="panel panel-default">
-                            <div class="panel-body">
-                                {% if entity.media %}
-                                    <a data-toggle="lightbox" data-target="#lb_id_{{ key }}" class="unlink lb">
-                                        {% thumbnail entity.media, 'small' with {class:'lazy'} %} {# render the related thumbnail #}
-                                    </a>
-                                {% endif %}
-                            </div>
+                    <div class="text-content">
+                        {% autoescape true %}
+                        <h5>
+                            {{ entity.caption|truncate(100) }}
+                        </h5>
+                        <p>
+                            {% if entity.smallContent|length > 0 %}
+                                {{ entity.smallContent|truncate(350) }}
+                            {% else %}
+                                {{ entity.content|striptags|truncate(350) }}
+                            {% endif %}
+                        </p>
+
+                        <p>
+                            <a href=""
+                               onclick="populate_and_open_modal(event, 'modal-blog-event-{{ entity.id }}');"
+                               class="btn btn-outline-inverse btn-sm">
+                                Подробнее...</a>
+                        </p>
+
+                        <div class="content-to-populate-in-modal" id="modal-blog-event-{{ entity.id }}">
+                            <h1>{{ entity.caption }}</h1>
+
+                            {{ entity.content|raw }}
                         </div>
-                        {{ entity.smallContent|truncate(truncate|default(300)) }}
+                        <!-- #modal-content-1 -->
+
+                        {% endautoescape %}
                     </div>
-
-                    <a href="{{ path_route }}" class="btn btn-default"
-                       role="button" style="margin: 5px;padding: 10px;">Узнать подробнее</a>
                 </div>
+                <!-- end: .item-content -->
             </div>
+            <!-- end: .grid-item -->
         {% endfor %}
-    </div>
-    <div class="clearfix"></div>
-    <div class="navigation pull-right">
-        {{ knp_pagination_render(entities) }}
-    </div>
-    <div class="clearfix"></div>
+    </section>
 {% else %}
-    <div class="alert alert-warning" role="alert">
-        <strong>404</strong> Не найдено ни одной записи
-    </div>
+    {% include 'BSFrontBundle::Common/alert.html.twig' with {
+    alertType:'normal',
+    alertMsg:'В блоге еще нет ни одной записи'
+    } %}
 {% endif %}
-
-<div class="line"></div>

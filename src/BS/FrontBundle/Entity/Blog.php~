@@ -64,9 +64,13 @@ class Blog
 
     /**
      * @ORM\ManyToOne(targetEntity="Application\Sonata\MediaBundle\Entity\Gallery")
-     * @ORM\JoinColumn(name="gallery", referencedColumnName="id")
+     * @ORM\JoinColumn(name="photo_gallery", referencedColumnName="id")
      */
-    private $gallery;
+    private $photoGallery;
 
-
+    /**
+     * @ORM\ManyToOne(targetEntity="Application\Sonata\MediaBundle\Entity\Gallery")
+     * @ORM\JoinColumn(name="video_gallery", referencedColumnName="id")
+     */
+    private $videoGallery;
 }
