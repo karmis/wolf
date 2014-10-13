@@ -7,14 +7,18 @@
 
             <!-- feature columns -->
             <section class="feature-columns row clearfix">
-                {% if secType == 'text' %}
-                    Kenny is sick.
-                {% elseif secType == 'grid' %}
-                    You killed Kenny! You bastard!!!
-                {% elseif secType == 'form' %}
-                    You killed Kenny! You bastard!!!
+                {% if secType is not defined %}
+                    {% set secType = 'text' %}
                 {% else %}
-                    Kenny looks okay --- so far
+                    {% if secType == 'text' %}
+                        {% include 'BSFrontBundle::Common/text.html.twig' %}
+                    {% elseif secType == 'grid' %}
+                        {% include 'BSFrontBundle::Common/grid.html.twig' %}
+                    {% elseif secType == 'form' %}
+                        {% include 'BSFrontBundle::Common/form.html.twig' %}
+                    {% else %}
+                        {% include 'BSFrontBundle::Common/text.html.twig' %}
+                    {% endif %}
                 {% endif %}
             </section>
         </div>

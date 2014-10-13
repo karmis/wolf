@@ -102,7 +102,7 @@ class BlogAdmin extends Admin
                 ),
                 array(
                     'link_parameters' => array(
-                        'context' => 'events_video'
+                        'context' => 'events_youtube'
                     )
                 )
             )

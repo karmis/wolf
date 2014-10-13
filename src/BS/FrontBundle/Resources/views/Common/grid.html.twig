@@ -1,13 +1,8 @@
-{% if entities is not defined %}
-    {% set entities = [] %}
-{% endif %}
-
-{% if entities|length > 0 %}
+{% if grids is defined and grids|length > 0 %}
     <!-- grid -->
-    <section class="grid row clearfix clearfix-for-2cols">
 
-        {% for entity in entities %}
 
+        {% for entity in grids %}
             <!-- grid item -->
             <div class="grid-item col-md-6">
                 <div class="item-content clearfix">
@@ -19,8 +14,8 @@
                             {{ entity.caption|truncate(100) }}
                         </h5>
                         <p>
-                            {% if entity.smallContent|length > 0 %}
-                                {{ entity.smallContent|truncate(350) }}
+                            {% if entity.smallContent %}
+                                {{ entity.smallContent|default('Краткое описание')|truncate(350) }}
                             {% else %}
                                 {{ entity.content|striptags|truncate(350) }}
                             {% endif %}
@@ -47,10 +42,10 @@
             </div>
             <!-- end: .grid-item -->
         {% endfor %}
-    </section>
 {% else %}
     {% include 'BSFrontBundle::Common/alert.html.twig' with {
     alertType:'normal',
-    alertMsg:'В блоге еще нет ни одной записи'
+    alertMsg:'В этом разделе еще нет ни одной записи'
     } %}
+
 {% endif %}
