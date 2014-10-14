@@ -12,6 +12,7 @@
         "wow":"wow#latest",
         "lightbox2":"lightbox2#latest",
         "jquery.easing":"jquery.easing#latest",
-        "jquery-backstretch":"jquery-backstretch#latest"
+        "jquery-backstretch":"jquery-backstretch#latest",
+        "bootstrap-datepicker":"bootstrap-datepicker#latest"
     }
 }

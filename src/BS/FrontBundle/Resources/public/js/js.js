@@ -7,4 +7,6 @@ $(function () {
             $('.logo-image.color').stop().animate({"opacity": "0"}, 100);
         });
 
+    $("img.lazy").lazyload();
+
 });

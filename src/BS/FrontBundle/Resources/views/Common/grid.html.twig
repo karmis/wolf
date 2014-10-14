@@ -2,46 +2,62 @@
     <!-- grid -->
 
 
-        {% for entity in grids %}
-            <!-- grid item -->
-            <div class="grid-item col-md-6">
-                <div class="item-content clearfix">
-                    <img src="{{ asset(pRes~"/images/bg/bg4.jpg") }}" alt="" width="350"/>
+    {% for entity in grids %}
+        <!-- grid item -->
+        <div class="grid-item col-md-4">
+            <div class="item-content clearfix">
+                {% if entity.photoGallery  and entity.photoGallery.getGalleryHasMedias == true %}
 
-                    <div class="text-content">
-                        {% autoescape true %}
-                        <h5>
-                            {{ entity.caption|truncate(100) }}
-                        </h5>
-                        <p>
-                            {% if entity.smallContent %}
-                                {{ entity.smallContent|default('Краткое описание')|truncate(350) }}
-                            {% else %}
-                                {{ entity.content|striptags|truncate(350) }}
-                            {% endif %}
-                        </p>
+                    {% if entity.photoGallery.getGalleryHasMedias|length > 0 %}
+                        {% if entity.photoGallery.getGalleryHasMedias[0].enabled %}
+                            {% media  entity.photoGallery.getGalleryHasMedias[0], 'medium' with {'class':'lazy img-responsive'} %}
+                        {% endif %}
+                    {#{% for photo in entity.photoGallery.getGalleryHasMedias %}#}
+                    {#{% if photo.enabled %}#}
+                    {#{% media photo, 'medium' with {'class':'lazy'} %}#}
+                    {#{% else %}#}
 
-                        <p>
-                            <a href=""
-                               onclick="populate_and_open_modal(event, 'modal-blog-event-{{ entity.id }}');"
-                               class="btn btn-outline-inverse btn-sm">
-                                Подробнее...</a>
-                        </p>
+                    {#{% endif %}#}
+                    {#&#123;&#35;{% media photo.gallery[0], 'medium' with {'class':'lazy'} %}&#35;&#125;#}
+                    {#{% endfor %}#}
+                {% else %}
+                    {% include 'BSFrontBundle::Common/randomImage.html.twig' with {} %}
+                {% endif %}
 
-                        <div class="content-to-populate-in-modal" id="modal-blog-event-{{ entity.id }}">
-                            <h1>{{ entity.caption }}</h1>
+                <div class="text-content text-center">
+                    {% autoescape true %}
+                    <h5>
+                        {{ entity.caption|truncate(100) }}
+                    </h5>
+                    <p>
+                        {% if entity.smallContent %}
+                            {{ entity.smallContent|default('Краткое описание')|truncate(350) }}
+                        {% else %}
+                            {{ entity.content|striptags|truncate(350) }}
+                        {% endif %}
+                    </p>
 
-                            {{ entity.content|raw }}
-                        </div>
-                        <!-- #modal-content-1 -->
+                    <p>
+                        <a href=""
+                           onclick="populate_and_open_modal(event, 'modal-blog-event-{{ entity.id }}');"
+                           class="btn btn-outline-inverse btn-sm">
+                            Подробнее...</a>
+                    </p>
 
-                        {% endautoescape %}
+                    <div class="content-to-populate-in-modal" id="modal-blog-event-{{ entity.id }}">
+                        <h1>{{ entity.caption }}</h1>
+
+                        {{ entity.content|raw }}
                     </div>
+                    <!-- #modal-content-1 -->
+
+                    {% endautoescape %}
                 </div>
-                <!-- end: .item-content -->
             </div>
-            <!-- end: .grid-item -->
-        {% endfor %}
+            <!-- end: .item-content -->
+        </div>
+        <!-- end: .grid-item -->
+    {% endfor %}
 {% else %}
     {% include 'BSFrontBundle::Common/alert.html.twig' with {
     alertType:'normal',

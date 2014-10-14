@@ -6,4 +6,10 @@ services:
         class: BS\FrontBundle\Admin\BlogAdmin
         arguments: [~, BS\FrontBundle\Entity\Blog, SonataAdminBundle:CRUD]
         tags:
-            - {name: sonata.admin, manager_type: orm, group: admin, label: Блог}
+            - {name: sonata.admin, manager_type: orm, group: Содержимое, label: Блог}
+
+    bs_front.admin.event:
+        class: BS\FrontBundle\Admin\EventAdmin
+        arguments: [~, BS\FrontBundle\Entity\Event, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: Содержимое, label: События}

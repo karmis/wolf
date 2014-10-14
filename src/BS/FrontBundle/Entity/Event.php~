@@ -1,0 +1,96 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: karmis
+ * Date: 13.10.14
+ * Time: 23:55
+ */
+
+namespace BS\FrontBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+use Sonata\MediaBundle\Model\MediaInterface;
+use Symfony\Component\Validator\Constraints as Assert;
+
+/**
+ * Blog
+ *
+ * @ORM\Table()
+ * @ORM\Entity
+ */
+class Event
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="caption", type="string", length=255)
+     */
+    private $caption;
+
+    /**
+     * @var string
+     * @Assert\Regex(
+     *     pattern="/^[A-Za-z0-9-]+$/",
+     *     match=true,
+     *     message="Адрес должен содержать только латинске буквы"
+     * )
+     * @ORM\Column(name="slug", type="string", length=255, unique=true)
+     */
+    private $slug;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="smallContent", type="text")
+     */
+    private $smallContent;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="content", type="text")
+     */
+    private $content;
+
+    /**
+     * @var boolean
+     *
+     * @ORM\Column(name="published", type="boolean", nullable=true)
+     */
+    private $published;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="Application\Sonata\MediaBundle\Entity\Gallery")
+     * @ORM\JoinColumn(name="photo_gallery", referencedColumnName="id")
+     */
+    private $photoGallery;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="Application\Sonata\MediaBundle\Entity\Gallery")
+     * @ORM\JoinColumn(name="video_gallery", referencedColumnName="id")
+     */
+    private $videoGallery;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="startDate", type="date")
+     */
+    private $startDate;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="endDate", type="date", nullable=true)
+     */
+    private $endDate;
+}

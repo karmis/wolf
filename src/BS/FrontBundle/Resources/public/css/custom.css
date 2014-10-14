@@ -9,3 +9,7 @@
     width: 90% !important;
     margin: 40px auto;
 }
+
+img.lazy {
+    display: block;
+}
