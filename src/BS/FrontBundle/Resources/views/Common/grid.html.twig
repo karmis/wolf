@@ -1,67 +1,62 @@
-{% if grids is defined and grids|length > 0 %}
-    <!-- grid -->
+{% import _self as forms %}
+{% macro getConstant(entityName, constantName) -%}
+    {{ constant('BS\\FrontBundle\\Entity\\'~entityName~'::'~constantName) }}
+{%- endmacro %}
+<div class="grid-wrapper">
+    {% if grids is defined and grids|length > 0 %}
+        <!-- grid -->
 
 
-    {% for entity in grids %}
-        <!-- grid item -->
-        <div class="grid-item col-md-4">
-            <div class="item-content clearfix">
-                {% if entity.photoGallery  and entity.photoGallery.getGalleryHasMedias == true %}
+        {% for entity in grids %}
+            <div class="grid-item col-md-4">
+                <div class="item-content clearfix">
+                    {% if entity.photoGallery|length %}
+                        <div class="grid-slider bxslider">
+                            {% for photo in entity.photoGallery %}
+                                <div>
+                                    <img src="{{ asset('uploads/gallery/'~photo) }}" alt="{{ entity.caption }}"
+                                         class="img-responsive lazy"/>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {% include 'BSFrontBundle::Common/randomImage.html.twig' with {} %}
+                    {% endif %}
 
-                    {% if entity.photoGallery.getGalleryHasMedias|length > 0 %}
-                        {% if entity.photoGallery.getGalleryHasMedias[0].enabled %}
-                            {% media  entity.photoGallery.getGalleryHasMedias[0], 'medium' with {'class':'lazy img-responsive'} %}
-                        {% endif %}
-                    {#{% for photo in entity.photoGallery.getGalleryHasMedias %}#}
-                    {#{% if photo.enabled %}#}
-                    {#{% media photo, 'medium' with {'class':'lazy'} %}#}
-                    {#{% else %}#}
+                    <div class="text-content text-center">
+                        {% autoescape true %}
+                        <h5>
+                            {{ entity.caption|truncate(100) }}
+                        </h5>
+                        <p>
+                            {% if entity.smallContent %}
+                                {{ entity.smallContent|default('Краткое описание')|truncate(350) }}
+                            {% else %}
+                                {{ entity.content|striptags|truncate(350) }}
+                            {% endif %}
+                        </p>
 
-                    {#{% endif %}#}
-                    {#&#123;&#35;{% media photo.gallery[0], 'medium' with {'class':'lazy'} %}&#35;&#125;#}
-                    {#{% endfor %}#}
-                {% else %}
-                    {% include 'BSFrontBundle::Common/randomImage.html.twig' with {} %}
-                {% endif %}
+                        <p>
+                            <a href=""
+                               onclick="populate_and_open_modal(event, 'modal-uid-{{ entity.id }}');"
+                               class="btn btn-outline-inverse btn-sm">
+                                Подробнее...</a>
+                        </p>
 
-                <div class="text-content text-center">
-                    {% autoescape true %}
-                    <h5>
-                        {{ entity.caption|truncate(100) }}
-                    </h5>
-                    <p>
-                        {% if entity.smallContent %}
-                            {{ entity.smallContent|default('Краткое описание')|truncate(350) }}
-                        {% else %}
-                            {{ entity.content|striptags|truncate(350) }}
-                        {% endif %}
-                    </p>
+                        {% include 'BSFrontBundle::Common/modal-populate.html.twig' with {
+                        entity:entity,
+                        } %}
 
-                    <p>
-                        <a href=""
-                           onclick="populate_and_open_modal(event, 'modal-blog-event-{{ entity.id }}');"
-                           class="btn btn-outline-inverse btn-sm">
-                            Подробнее...</a>
-                    </p>
-
-                    <div class="content-to-populate-in-modal" id="modal-blog-event-{{ entity.id }}">
-                        <h1>{{ entity.caption }}</h1>
-
-                        {{ entity.content|raw }}
+                        {% endautoescape %}
                     </div>
-                    <!-- #modal-content-1 -->
-
-                    {% endautoescape %}
                 </div>
             </div>
-            <!-- end: .item-content -->
-        </div>
-        <!-- end: .grid-item -->
-    {% endfor %}
-{% else %}
-    {% include 'BSFrontBundle::Common/alert.html.twig' with {
-    alertType:'normal',
-    alertMsg:'В этом разделе еще нет ни одной записи'
-    } %}
+        {% endfor %}
+    {% else %}
+        {% include 'BSFrontBundle::Common/alert.html.twig' with {
+        alertType:'normal',
+        alertMsg:'В этом разделе еще нет ни одной записи'
+        } %}
 
-{% endif %}
+    {% endif %}
+</div>

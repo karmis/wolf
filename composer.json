@@ -27,6 +27,7 @@
         "egeloen/ckeditor-bundle": "dev-master",
         "knplabs/knp-paginator-bundle": "~2.4",
         "iphp/filestore-bundle":"dev-master",
+        "comur/image-bundle": "dev-master",
 
         "sonata-project/core-bundle": "~2.2@dev",
         "sonata-project/jquery-bundle": "dev-master",

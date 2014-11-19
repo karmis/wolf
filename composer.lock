@@ -6,6 +6,9 @@
     ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
     "hash": "15d2df75cd5be85249958c3a0e9bd6ab",
 =======
     "hash": "ffa80779db6b050e206e34d1579720b1",
@@ -128,11 +131,6 @@
             "time": "2014-09-26 09:06:27"
         },
         {
-=======
-    "hash": "b83d5b3bf921da1e873aacada3d7a8b9",
-    "packages": [
-        {
->>>>>>> parent of 383a3da... wolf
             "name": "dflydev/markdown",
             "version": "v1.0.3",
             "source": {
@@ -478,6 +476,9 @@
             "name": "doctrine/dbal",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
             "version": "dev-master",
 =======
             "version": "v2.4.3",
@@ -492,6 +493,7 @@
 <<<<<<< HEAD
                 "url": "https://api.github.com/repos/doctrine/dbal/zipball/e35ce0486a1d161e739bed38fde27b7cc921f5f0",
                 "reference": "e35ce0486a1d161e739bed38fde27b7cc921f5f0",
+<<<<<<< HEAD
 =======
             "version": "v2.4.2",
             "source": {
@@ -508,6 +510,8 @@
                 "url": "https://api.github.com/repos/doctrine/dbal/zipball/0368bc031976126e5d36d37d2c56155092b6575b",
                 "reference": "0368bc031976126e5d36d37d2c56155092b6575b",
 >>>>>>> parent of 755204c... ignored bower componetns
+=======
+>>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
                 "shasum": ""
             },
             "require": {
@@ -519,7 +523,7 @@
                 "symfony/console": "~2.0"
             },
             "suggest": {
-                "symfony/console": "Allows use of the command line interface"
+                "symfony/console": "For helpful console commands such as SQL execution and import of files."
             },
             "type": "library",
             "autoload": {
@@ -533,23 +537,20 @@
             ],
             "authors": [
                 {
-                    "name": "Jonathan Wage",
-                    "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/",
-                    "role": "Creator"
-                },
-                {
-                    "name": "Guilherme Blanco",
-                    "email": "guilhermeblanco@gmail.com",
-                    "homepage": "http://www.instaclick.com"
-                },
-                {
                     "name": "Roman Borschel",
                     "email": "roman@code-factory.org"
                 },
                 {
                     "name": "Benjamin Eberlei",
                     "email": "kontakt@beberlei.de"
+                },
+                {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com"
                 }
             ],
             "description": "Database Abstraction Layer",
@@ -562,6 +563,7 @@
             ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2014-11-11 11:37:53"
 =======
             "time": "2014-01-01 16:43:57"
@@ -569,6 +571,9 @@
 =======
             "time": "2014-10-16 11:56:49"
 >>>>>>> parent of 755204c... ignored bower componetns
+=======
+            "time": "2014-11-11 11:37:53"
+>>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
         },
         {
             "name": "doctrine/doctrine-bundle",
@@ -1017,7 +1022,6 @@
             "time": "2014-07-31 22:54:27"
         },
         {
-<<<<<<< HEAD
             "name": "friendsofsymfony/jsrouting-bundle",
             "version": "1.5.3",
             "target-dir": "FOS/JsRoutingBundle",
@@ -1075,8 +1079,6 @@
             "time": "2014-01-23 21:25:39"
         },
         {
-=======
->>>>>>> parent of 383a3da... wolf
             "name": "friendsofsymfony/rest-bundle",
             "version": "1.4.2",
             "target-dir": "FOS/RestBundle",
@@ -1665,7 +1667,6 @@
             "time": "2014-09-25 09:44:03"
         },
         {
-<<<<<<< HEAD
             "name": "jms/translation-bundle",
             "version": "1.1.0",
             "target-dir": "JMS/TranslationBundle",
@@ -1740,8 +1741,6 @@
             "time": "2013-06-08 14:08:19"
         },
         {
-=======
->>>>>>> parent of 383a3da... wolf
             "name": "knplabs/gaufrette",
             "version": "v0.1.8",
             "source": {
@@ -1825,16 +1824,16 @@
         },
         {
             "name": "knplabs/knp-components",
-            "version": "1.3.0",
+            "version": "1.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/KnpLabs/knp-components.git",
-                "reference": "756c44523db9cf125381cba2cb08160fd184fb24"
+                "reference": "6d091c2f16eec2769db38f38e08c7bd5847ce072"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KnpLabs/knp-components/zipball/756c44523db9cf125381cba2cb08160fd184fb24",
-                "reference": "756c44523db9cf125381cba2cb08160fd184fb24",
+                "url": "https://api.github.com/repos/KnpLabs/knp-components/zipball/6d091c2f16eec2769db38f38e08c7bd5847ce072",
+                "reference": "6d091c2f16eec2769db38f38e08c7bd5847ce072",
                 "shasum": ""
             },
             "require": {
@@ -1844,6 +1843,7 @@
                 "doctrine/mongodb-odm": "~1.0@beta",
                 "doctrine/orm": "~2.4",
                 "phpunit/phpunit": "~4.2",
+                "ruflin/elastica": "~1.0",
                 "symfony/event-dispatcher": "~2.5"
             },
             "suggest": {
@@ -1888,7 +1888,7 @@
                 "pager",
                 "paginator"
             ],
-            "time": "2014-10-06 09:25:27"
+            "time": "2014-10-06 10:38:10"
         },
         {
             "name": "knplabs/knp-markdown-bundle",
@@ -2130,6 +2130,9 @@
             "name": "kriswallsmith/assetic",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
             "version": "dev-master",
 =======
             "version": "v1.2.0",
@@ -2144,6 +2147,7 @@
 <<<<<<< HEAD
                 "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/eb82167d176eb40078469ef9408ff56fd32a5d66",
                 "reference": "eb82167d176eb40078469ef9408ff56fd32a5d66",
+<<<<<<< HEAD
 =======
             "version": "v1.1.2",
             "source": {
@@ -2160,6 +2164,8 @@
                 "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/df991c124a2212371443b586a1be767500036dee",
                 "reference": "df991c124a2212371443b586a1be767500036dee",
 >>>>>>> parent of 755204c... ignored bower componetns
+=======
+>>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
                 "shasum": ""
             },
             "require": {
@@ -2174,7 +2180,9 @@
                 "leafo/scssphp": "*",
                 "leafo/scssphp-compass": "*",
                 "mrclay/minify": "*",
-                "phpunit/phpunit": "~3.7",
+                "patchwork/jsqueeze": "~1.0",
+                "phpunit/phpunit": "~4",
+                "psr/log": "~1.0",
                 "ptachoire/cssembed": "*",
                 "twig/twig": "~1.6"
             },
@@ -2182,13 +2190,14 @@
                 "leafo/lessphp": "Assetic provides the integration with the lessphp LESS compiler",
                 "leafo/scssphp": "Assetic provides the integration with the scssphp SCSS compiler",
                 "leafo/scssphp-compass": "Assetic provides the integration with the SCSS compass plugin",
+                "patchwork/jsqueeze": "Assetic provides the integration with the JSqueeze JavaScript compressor",
                 "ptachoire/cssembed": "Assetic provides the integration with phpcssembed to embed data uris",
                 "twig/twig": "Assetic provides the integration with the Twig templating engine"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.1-dev"
+                    "dev-master": "1.2-dev"
                 }
             },
             "autoload": {
@@ -2219,6 +2228,7 @@
             ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2014-10-30 11:33:12"
 =======
             "time": "2013-07-19 00:03:27"
@@ -2226,6 +2236,9 @@
 =======
             "time": "2014-10-14 14:45:32"
 >>>>>>> parent of 755204c... ignored bower componetns
+=======
+            "time": "2014-10-30 11:33:12"
+>>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
         },
         {
             "name": "kriswallsmith/buzz",
@@ -2474,7 +2487,6 @@
             "time": "2014-07-30 09:11:08"
         },
         {
-<<<<<<< HEAD
             "name": "nikic/php-parser",
             "version": "v0.9.1",
             "source": {
@@ -2514,8 +2526,6 @@
             "time": "2012-04-23 22:52:11"
         },
         {
-=======
->>>>>>> parent of 383a3da... wolf
             "name": "phpcollection/phpcollection",
             "version": "0.4.0",
             "source": {
@@ -2656,6 +2666,7 @@
             "name": "sensio/distribution-bundle",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "version": "dev-master",
 =======
             "version": "v3.0.2",
@@ -2663,18 +2674,25 @@
 =======
             "version": "v3.0.6",
 >>>>>>> parent of 755204c... ignored bower componetns
+=======
+            "version": "dev-master",
+>>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
             "target-dir": "Sensio/Bundle/DistributionBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/SensioDistributionBundle.git",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
                 "reference": "d18ef2b1e59ae2b69658a5958cf284e655ed9e0d"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/sensiolabs/SensioDistributionBundle/zipball/d18ef2b1e59ae2b69658a5958cf284e655ed9e0d",
                 "reference": "d18ef2b1e59ae2b69658a5958cf284e655ed9e0d",
+<<<<<<< HEAD
 =======
                 "reference": "67b34359f91c25ad36b960f66a287df0615d7c54"
             },
@@ -2691,15 +2709,16 @@
                 "url": "https://api.github.com/repos/sensiolabs/SensioDistributionBundle/zipball/e20461e4f8e1afd68f36cf90bdccc06f7aa6a6c2",
                 "reference": "e20461e4f8e1afd68f36cf90bdccc06f7aa6a6c2",
 >>>>>>> parent of 755204c... ignored bower componetns
+=======
+>>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3",
+                "sensiolabs/security-checker": "~2.0",
                 "symfony/class-loader": "~2.2",
-                "symfony/config": "~2.2",
-                "symfony/dependency-injection": "~2.2",
-                "symfony/filesystem": "~2.2",
                 "symfony/form": "~2.2",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                 "symfony/framework-bundle": "~2.3",
@@ -2711,6 +2730,9 @@
 =======
                 "symfony/framework-bundle": "~2.4",
 >>>>>>> parent of 755204c... ignored bower componetns
+=======
+                "symfony/framework-bundle": "~2.3",
+>>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
                 "symfony/process": "~2.2",
                 "symfony/validator": "~2.2",
                 "symfony/yaml": "~2.2"
@@ -2733,16 +2755,15 @@
             "authors": [
                 {
                     "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com",
-                    "homepage": "http://fabien.potencier.org",
-                    "role": "Lead Developer"
+                    "email": "fabien@symfony.com"
                 }
             ],
-            "description": "The base bundle for the Symfony Distributions",
+            "description": "Base bundle for Symfony Distributions",
             "keywords": [
                 "configuration",
                 "distribution"
             ],
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             "time": "2014-11-19 11:48:00"
@@ -2752,6 +2773,9 @@
 =======
             "time": "2014-09-24 14:47:46"
 >>>>>>> parent of 755204c... ignored bower componetns
+=======
+            "time": "2014-11-19 11:48:00"
+>>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
         },
         {
             "name": "sensio/framework-extra-bundle",
@@ -2857,7 +2881,6 @@
             "time": "2014-09-22 14:56:14"
         },
         {
-<<<<<<< HEAD
             "name": "sensiolabs/security-checker",
             "version": "v2.0.0",
             "source": {
@@ -2903,8 +2926,6 @@
             "time": "2014-07-19 10:52:35"
         },
         {
-=======
->>>>>>> parent of 383a3da... wolf
             "name": "sonata-project/admin-bundle",
             "version": "dev-master",
             "source": {
@@ -2912,12 +2933,16 @@
                 "url": "https://github.com/sonata-project/SonataAdminBundle.git",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
                 "reference": "6f57be5e5ac25a2c4b9abcf257174448882465d0"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/sonata-project/SonataAdminBundle/zipball/6f57be5e5ac25a2c4b9abcf257174448882465d0",
                 "reference": "6f57be5e5ac25a2c4b9abcf257174448882465d0",
+<<<<<<< HEAD
 =======
                 "reference": "e6ce0a612a4f9a8d6212c5bac9b958d7d754bfdb"
             },
@@ -2934,6 +2959,8 @@
                 "url": "https://api.github.com/repos/sonata-project/SonataAdminBundle/zipball/069e610d4d729608bd8fcb03647529cb252993ef",
                 "reference": "069e610d4d729608bd8fcb03647529cb252993ef",
 >>>>>>> parent of 755204c... ignored bower componetns
+=======
+>>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
                 "shasum": ""
             },
             "require": {
@@ -3001,6 +3028,7 @@
             ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2014-11-19 10:16:48"
 =======
             "time": "2014-10-09 09:19:38"
@@ -3008,6 +3036,9 @@
 =======
             "time": "2014-10-22 16:33:22"
 >>>>>>> parent of 755204c... ignored bower componetns
+=======
+            "time": "2014-11-19 10:16:48"
+>>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
         },
         {
             "name": "sonata-project/block-bundle",
@@ -3142,12 +3173,16 @@
                 "url": "https://github.com/sonata-project/SonataCoreBundle.git",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
                 "reference": "c4b5743bb66b28b97a9f87c18cc81930bb37a344"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/sonata-project/SonataCoreBundle/zipball/c4b5743bb66b28b97a9f87c18cc81930bb37a344",
                 "reference": "c4b5743bb66b28b97a9f87c18cc81930bb37a344",
+<<<<<<< HEAD
 =======
                 "reference": "6883f1fa0efbaa05cf670ee009514fd2d88d8ee8"
             },
@@ -3164,9 +3199,12 @@
                 "url": "https://api.github.com/repos/sonata-project/SonataCoreBundle/zipball/9bbbbc0df4f1c489bfaf93cabe497326e5fdf318",
                 "reference": "9bbbbc0df4f1c489bfaf93cabe497326e5fdf318",
 >>>>>>> parent of 755204c... ignored bower componetns
+=======
+>>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
                 "shasum": ""
             },
             "require": {
+                "cocur/slugify": "*",
                 "symfony/config": "~2.3",
                 "symfony/form": "~2.3",
                 "symfony/http-foundation": "~2.3",
@@ -3214,6 +3252,7 @@
             ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2014-11-03 10:41:41"
 =======
             "time": "2014-10-06 13:03:25"
@@ -3221,6 +3260,9 @@
 =======
             "time": "2014-10-22 14:47:43"
 >>>>>>> parent of 755204c... ignored bower componetns
+=======
+            "time": "2014-11-03 10:41:41"
+>>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
         },
         {
             "name": "sonata-project/datagrid-bundle",
@@ -3330,12 +3372,16 @@
                 "url": "https://github.com/sonata-project/SonataDoctrineORMAdminBundle.git",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
                 "reference": "74e5033edf9c8ea37a3b289e2fb153c085fb4dcc"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/sonata-project/SonataDoctrineORMAdminBundle/zipball/74e5033edf9c8ea37a3b289e2fb153c085fb4dcc",
                 "reference": "74e5033edf9c8ea37a3b289e2fb153c085fb4dcc",
+<<<<<<< HEAD
 =======
                 "reference": "090c4a4b233b3e1af21b6ca54e2eb7be19233d9d"
             },
@@ -3352,6 +3398,8 @@
                 "url": "https://api.github.com/repos/sonata-project/SonataDoctrineORMAdminBundle/zipball/b29af6623543a47f7950f27697e08e0dcba82173",
                 "reference": "b29af6623543a47f7950f27697e08e0dcba82173",
 >>>>>>> parent of 755204c... ignored bower componetns
+=======
+>>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
                 "shasum": ""
             },
             "require": {
@@ -3410,6 +3458,7 @@
             ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2014-11-06 11:41:36"
 =======
             "time": "2014-10-04 22:02:48"
@@ -3417,6 +3466,9 @@
 =======
             "time": "2014-10-16 09:00:50"
 >>>>>>> parent of 755204c... ignored bower componetns
+=======
+            "time": "2014-11-06 11:41:36"
+>>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
         },
         {
             "name": "sonata-project/easy-extends-bundle",
@@ -3987,12 +4039,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataUserBundle.git",
-                "reference": "57bc7b88fa99c5f5af6b4c401b16bbb324b22caf"
+                "reference": "c230cb57dc8547bc03aa055e06df350c159a37c9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataUserBundle/zipball/57bc7b88fa99c5f5af6b4c401b16bbb324b22caf",
-                "reference": "57bc7b88fa99c5f5af6b4c401b16bbb324b22caf",
+                "url": "https://api.github.com/repos/sonata-project/SonataUserBundle/zipball/c230cb57dc8547bc03aa055e06df350c159a37c9",
+                "reference": "c230cb57dc8547bc03aa055e06df350c159a37c9",
                 "shasum": ""
             },
             "require": {
@@ -4051,7 +4103,7 @@
                 "sonata",
                 "user"
             ],
-            "time": "2014-10-09 09:57:56"
+            "time": "2014-10-20 13:03:02"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -4109,6 +4161,7 @@
             "name": "symfony/assetic-bundle",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "version": "dev-master",
 =======
             "version": "v2.3.0",
@@ -4117,43 +4170,48 @@
 =======
             "version": "v2.5.0",
 >>>>>>> parent of 755204c... ignored bower componetns
+=======
+            "version": "dev-master",
+>>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/AsseticBundle.git",
-                "reference": "146dd3cb46b302bd471560471c6aaa930483dac1"
+                "reference": "90ea7fb66d6d5245fd4afc16e4c8070214254fec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/AsseticBundle/zipball/146dd3cb46b302bd471560471c6aaa930483dac1",
-                "reference": "146dd3cb46b302bd471560471c6aaa930483dac1",
+                "url": "https://api.github.com/repos/symfony/AsseticBundle/zipball/90ea7fb66d6d5245fd4afc16e4c8070214254fec",
+                "reference": "90ea7fb66d6d5245fd4afc16e4c8070214254fec",
                 "shasum": ""
             },
             "require": {
-                "kriswallsmith/assetic": "~1.1",
+                "kriswallsmith/assetic": "~1.2",
                 "php": ">=5.3.0",
-                "symfony/framework-bundle": "~2.1"
-            },
-            "require-dev": {
-                "symfony/class-loader": "~2.1",
                 "symfony/console": "~2.1",
-                "symfony/css-selector": "~2.1",
-                "symfony/dom-crawler": "~2.1",
-                "symfony/form": "~2.1",
-                "symfony/twig-bundle": "~2.1",
+                "symfony/framework-bundle": "~2.1",
                 "symfony/yaml": "~2.1"
             },
-            "suggest": {
+            "require-dev": {
+                "kriswallsmith/spork": "~0.2",
+                "patchwork/jsqueeze": "~1.0",
+                "symfony/class-loader": "~2.1",
+                "symfony/css-selector": "~2.1",
+                "symfony/dom-crawler": "~2.1",
                 "symfony/twig-bundle": "~2.1"
+            },
+            "suggest": {
+                "kriswallsmith/spork": "to be able to dump assets in parallel",
+                "symfony/twig-bundle": "to use the Twig integration"
             },
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1.x-dev"
+                    "dev-master": "2.5-dev"
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "Symfony\\Bundle\\AsseticBundle": ""
+                "psr-4": {
+                    "Symfony\\Bundle\\AsseticBundle\\": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -4174,7 +4232,7 @@
                 "compression",
                 "minification"
             ],
-            "time": "2013-05-16 05:32:23"
+            "time": "2014-10-15 12:03:38"
         },
         {
             "name": "symfony/icu",
@@ -4562,6 +4620,9 @@
             "name": "twig/twig",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
             "version": "dev-master",
 =======
             "version": "v1.16.2",
@@ -4576,6 +4637,7 @@
 <<<<<<< HEAD
                 "url": "https://api.github.com/repos/twigphp/Twig/zipball/b87cf88f88feee256c1e1ca85ec6677f38fcc238",
                 "reference": "b87cf88f88feee256c1e1ca85ec6677f38fcc238",
+<<<<<<< HEAD
 =======
             "version": "v1.16.0",
             "source": {
@@ -4592,6 +4654,8 @@
                 "url": "https://api.github.com/repos/fabpot/Twig/zipball/42f758d9fe2146d1f0470604fc05ee43580873fc",
                 "reference": "42f758d9fe2146d1f0470604fc05ee43580873fc",
 >>>>>>> parent of 755204c... ignored bower componetns
+=======
+>>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
                 "shasum": ""
             },
             "require": {
@@ -4637,6 +4701,7 @@
             ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2014-11-10 14:48:15"
 =======
             "time": "2014-07-05 12:19:05"
@@ -4644,6 +4709,9 @@
 =======
             "time": "2014-10-17 12:53:44"
 >>>>>>> parent of 755204c... ignored bower componetns
+=======
+            "time": "2014-11-10 14:48:15"
+>>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
         },
         {
             "name": "willdurand/jsonp-callback-validator",
@@ -4744,6 +4812,7 @@
         "tilleuls/ckeditor-sonata-media-bundle": 20,
         "egeloen/ckeditor-bundle": 20,
         "iphp/filestore-bundle": 20,
+        "comur/image-bundle": 20,
         "sonata-project/core-bundle": 20,
         "sonata-project/jquery-bundle": 20,
         "sonata-project/block-bundle": 20,

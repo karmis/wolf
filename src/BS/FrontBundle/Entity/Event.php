@@ -11,7 +11,7 @@ namespace BS\FrontBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 use Sonata\MediaBundle\Model\MediaInterface;
 use Symfony\Component\Validator\Constraints as Assert;
-
+define('TMP_EVENT_UPLOAD_ROOT_DIR', __DIR__ . '/../../../../web/uploads/');
 /**
  * Blog
  *
@@ -20,6 +20,9 @@ use Symfony\Component\Validator\Constraints as Assert;
  */
 class Event
 {
+    const EVENT_UPLOAD_ROOT_DIR =  TMP_EVENT_UPLOAD_ROOT_DIR;
+    const EVENT_UPLOAD_DIR = "uploads/";
+
     /**
      * @var integer
      *
@@ -69,10 +72,19 @@ class Event
     private $published;
 
     /**
-     * @ORM\ManyToOne(targetEntity="Application\Sonata\MediaBundle\Entity\Gallery")
-     * @ORM\JoinColumn(name="photo_gallery", referencedColumnName="id")
+     * @ORM\Column(type="string", length=255, nullable=true)
      */
-    private $photoGallery;
+    protected $photo;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    protected $originalPhoto;
+
+    /**
+     * @ORM\Column(type="array", nullable=true)
+     */
+    protected $photoGallery;
 
     /**
      * @ORM\ManyToOne(targetEntity="Application\Sonata\MediaBundle\Entity\Gallery")
@@ -93,6 +105,27 @@ class Event
      * @ORM\Column(name="endDate", type="date", nullable=true)
      */
     private $endDate;
+
+    public function getUploadRootDir()
+    {
+        // absolute path to your directory where images must be saved
+        return self::EVENT_UPLOAD_ROOT_DIR;
+    }
+
+    public function getUploadDir()
+    {
+        return self::EVENT_UPLOAD_DIR;
+    }
+
+    public function getAbsolutePath()
+    {
+        return null === $this->photo ? null : $this->getUploadRootDir().'/'.$this->photo;
+    }
+
+    public function getWebPath()
+    {
+        return null === $this->photo ? null : '/'.$this->getUploadDir().'/'.$this->photo;
+    }
 
     /**
      * Get id
@@ -220,6 +253,75 @@ class Event
     }
 
     /**
+     * Set photo
+     *
+     * @param string $photo
+     * @return Event
+     */
+    public function setPhoto($photo)
+    {
+        $this->photo = $photo;
+
+        return $this;
+    }
+
+    /**
+     * Get photo
+     *
+     * @return string 
+     */
+    public function getPhoto()
+    {
+        return $this->photo;
+    }
+
+    /**
+     * Set originalPhoto
+     *
+     * @param string $originalPhoto
+     * @return Event
+     */
+    public function setOriginalPhoto($originalPhoto)
+    {
+        $this->originalPhoto = $originalPhoto;
+
+        return $this;
+    }
+
+    /**
+     * Get originalPhoto
+     *
+     * @return string 
+     */
+    public function getOriginalPhoto()
+    {
+        return $this->originalPhoto;
+    }
+
+    /**
+     * Set photoGallery
+     *
+     * @param array $photoGallery
+     * @return Event
+     */
+    public function setPhotoGallery($photoGallery)
+    {
+        $this->photoGallery = $photoGallery;
+
+        return $this;
+    }
+
+    /**
+     * Get photoGallery
+     *
+     * @return array 
+     */
+    public function getPhotoGallery()
+    {
+        return $this->photoGallery;
+    }
+
+    /**
      * Set startDate
      *
      * @param \DateTime $startDate
@@ -263,29 +365,6 @@ class Event
     public function getEndDate()
     {
         return $this->endDate;
-    }
-
-    /**
-     * Set photoGallery
-     *
-     * @param \Application\Sonata\MediaBundle\Entity\Gallery $photoGallery
-     * @return Event
-     */
-    public function setPhotoGallery(\Application\Sonata\MediaBundle\Entity\Gallery $photoGallery = null)
-    {
-        $this->photoGallery = $photoGallery;
-
-        return $this;
-    }
-
-    /**
-     * Get photoGallery
-     *
-     * @return \Application\Sonata\MediaBundle\Entity\Gallery 
-     */
-    public function getPhotoGallery()
-    {
-        return $this->photoGallery;
     }
 
     /**
