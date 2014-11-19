@@ -7,7 +7,6 @@ use Sonata\AdminBundle\Datagrid\DatagridMapper;
 use Sonata\AdminBundle\Datagrid\ListMapper;
 use Sonata\AdminBundle\Form\FormMapper;
 use Sonata\AdminBundle\Show\ShowMapper;
-use BS\FrontBundle\Entity\Event;
 
 class EventAdmin extends Admin
 {
@@ -114,35 +113,16 @@ class EventAdmin extends Admin
 //                    )
 //                )
             ))
-            ->add('photoGallery', 'comur_gallery', array(
-                'uploadConfig' => array(
-                    'uploadRoute' => 'comur_api_upload', //optional
-                    'uploadUrl' => Event::EVENT_UPLOAD_ROOT_DIR, // required - see explanation below (you can also put just a dir path)
-                    'webDir' => Event::EVENT_UPLOAD_DIR, // required - see explanation below (you can also put just a dir path)
-                    'fileExt' => '*.jpg;*.gif;*.png;*.jpeg', //optional
-                    'libraryDir' => null, //optional
-                    'libraryRoute' => 'comur_api_image_library', //optional
-                    'showLibrary' => true, //optional
-                    'saveOriginal' => 'originalPhoto' //optional
+            ->add('photoGallery', 'sonata_type_model_list', array(
+                    'required' => false,
+                    'label' => 'form.photoGallery',
                 ),
-                'cropConfig' => array(
-                    'maxWidth' => 605,
-                    'maxHeight' => 605,
-                    'minWidth' => 405,
-                    'minHeight' => 405,
-                    'aspectRatio' => true, //optional
-                    'cropRoute' => 'comur_api_crop', //optional
-                    'forceResize' => false, //optional
-                    'thumbs' => array( //optional
-                        array(
-                            'maxWidth' => 410,
-                            'maxHeight' => 410,
-                            'useAsFieldImage' => true //optional
-                        )
+                array(
+                    'link_parameters' => array(
+                        'context' => 'events_image'
                     )
                 )
-            ))
-
+            )
             ->add('videoGallery', 'sonata_type_model_list', array(
                     'required' => false,
                     'label' => 'form.videoGallery',

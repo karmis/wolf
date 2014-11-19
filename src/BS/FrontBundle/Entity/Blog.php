@@ -12,12 +12,8 @@ use Symfony\Component\Validator\Constraints as Assert;
  * @ORM\Table()
  * @ORM\Entity
  */
-define('TMP_BLOG_UPLOAD_ROOT_DIR', __DIR__ . '/../../../../web/uploads/');
 class Blog
 {
-    const BLOG_UPLOAD_ROOT_DIR =  TMP_BLOG_UPLOAD_ROOT_DIR;
-    const BLOG_UPLOAD_DIR = "uploads/";
-
     /**
      * @var integer
      *
@@ -67,46 +63,16 @@ class Blog
     private $published;
 
     /**
-     * @ORM\Column(type="string", length=255, nullable=true)
+     * @ORM\ManyToOne(targetEntity="Application\Sonata\MediaBundle\Entity\Gallery")
+     * @ORM\JoinColumn(name="photo_gallery", referencedColumnName="id")
      */
-    protected $photo;
-
-    /**
-     * @ORM\Column(type="string", length=255, nullable=true)
-     */
-    protected $originalPhoto;
-
-    /**
-     * @ORM\Column(type="array", nullable=true)
-     */
-    protected $photoGallery;
+    private $photoGallery;
 
     /**
      * @ORM\ManyToOne(targetEntity="Application\Sonata\MediaBundle\Entity\Gallery")
      * @ORM\JoinColumn(name="video_gallery", referencedColumnName="id")
      */
     private $videoGallery;
-
-    public function getUploadRootDir()
-    {
-        // absolute path to your directory where images must be saved
-        return self::BLOG_UPLOAD_ROOT_DIR;
-    }
-
-    public function getUploadDir()
-    {
-        return self::BLOG_UPLOAD_DIR;
-    }
-
-    public function getAbsolutePath()
-    {
-        return null === $this->photo ? null : $this->getUploadRootDir().'/'.$this->photo;
-    }
-
-    public function getWebPath()
-    {
-        return null === $this->photo ? null : '/'.$this->getUploadDir().'/'.$this->photo;
-    }
 
     /**
      * Get id
@@ -234,58 +200,12 @@ class Blog
     }
 
     /**
-     * Set photo
-     *
-     * @param string $photo
-     * @return Blog
-     */
-    public function setPhoto($photo)
-    {
-        $this->photo = $photo;
-
-        return $this;
-    }
-
-    /**
-     * Get photo
-     *
-     * @return string 
-     */
-    public function getPhoto()
-    {
-        return $this->photo;
-    }
-
-    /**
-     * Set originalPhoto
-     *
-     * @param string $originalPhoto
-     * @return Blog
-     */
-    public function setOriginalPhoto($originalPhoto)
-    {
-        $this->originalPhoto = $originalPhoto;
-
-        return $this;
-    }
-
-    /**
-     * Get originalPhoto
-     *
-     * @return string 
-     */
-    public function getOriginalPhoto()
-    {
-        return $this->originalPhoto;
-    }
-
-    /**
      * Set photoGallery
      *
-     * @param array $photoGallery
+     * @param \Application\Sonata\MediaBundle\Entity\Gallery $photoGallery
      * @return Blog
      */
-    public function setPhotoGallery($photoGallery)
+    public function setPhotoGallery(\Application\Sonata\MediaBundle\Entity\Gallery $photoGallery = null)
     {
         $this->photoGallery = $photoGallery;
 
@@ -295,7 +215,7 @@ class Blog
     /**
      * Get photoGallery
      *
-     * @return array 
+     * @return \Application\Sonata\MediaBundle\Entity\Gallery 
      */
     public function getPhotoGallery()
     {

@@ -33,7 +33,7 @@ sonata_media:
             formats:
                 xsmall: { width: 80 , quality: 60}
                 small: { width: 250 , quality: 70}
-                medium: { width: 350 , quality: 85}
+                medium: { width: 550 , quality: 85}
                 big:   { width: 1000 , quality: 100}
 
         events_video:
