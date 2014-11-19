@@ -2,7 +2,7 @@
 
 use Symfony\Component\HttpKernel\Kernel;
 use Symfony\Component\Config\Loader\LoaderInterface;
-
+date_default_timezone_set('Europe/Moscow');
 class AppKernel extends Kernel
 {
     public function registerBundles()
@@ -28,6 +28,9 @@ class AppKernel extends Kernel
             new Ivory\CKEditorBundle\IvoryCKEditorBundle(),
             new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
             new Iphp\FileStoreBundle\IphpFileStoreBundle(),
+            new FOS\JsRoutingBundle\FOSJsRoutingBundle(),
+            new JMS\TranslationBundle\JMSTranslationBundle(),
+            new Comur\ImageBundle\ComurImageBundle(),
 
             // Sonata
             new Sonata\IntlBundle\SonataIntlBundle(),
@@ -51,7 +54,7 @@ class AppKernel extends Kernel
 //            new Application\Sonata\NewsBundle\ApplicationSonataNewsBundle(),
             new Application\Sonata\FormatterBundle\ApplicationSonataFormatterBundle(),
             new Application\Sonata\NotificationBundle\ApplicationSonataNotificationBundle(),
-            new Application\Iphp\FileStoreBundle\ApplicationIphpFileStoreBundle(),
+            new Application\Comur\ImageBundle\ApplicationComurImageBundle(),
 
             // Project
             new BS\FrontBundle\BSFrontBundle(),

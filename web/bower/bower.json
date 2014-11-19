@@ -3,6 +3,7 @@
     "dependencies": {
         "jquery": "jquery#latest",
         "jquery.migrate": "jquery.migrate#latest",
+        "bxslider-4":"bxslider-4#latest",
         "bootstrap": "bootstrap#latest",
         "jqBootstrapValidation":"jqBootstrapValidation#latest",
         "jquery.lazyload":"jquery.lazyload#latest",
@@ -13,6 +14,6 @@
         "lightbox2":"lightbox2#latest",
         "jquery.easing":"jquery.easing#latest",
         "jquery-backstretch":"jquery-backstretch#latest",
-        "bootstrap-datepicker":"bootstrap-datepicker#latest"
+        "jssor-slider":"jssor-slider#latest"
     }
 }
