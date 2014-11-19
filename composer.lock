@@ -7,6 +7,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
 =======
 >>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
     "hash": "15d2df75cd5be85249958c3a0e9bd6ab",
@@ -477,6 +480,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
 =======
 >>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
             "version": "dev-master",
@@ -494,6 +500,7 @@
                 "url": "https://api.github.com/repos/doctrine/dbal/zipball/e35ce0486a1d161e739bed38fde27b7cc921f5f0",
                 "reference": "e35ce0486a1d161e739bed38fde27b7cc921f5f0",
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             "version": "v2.4.2",
             "source": {
@@ -510,6 +517,8 @@
                 "url": "https://api.github.com/repos/doctrine/dbal/zipball/0368bc031976126e5d36d37d2c56155092b6575b",
                 "reference": "0368bc031976126e5d36d37d2c56155092b6575b",
 >>>>>>> parent of 755204c... ignored bower componetns
+=======
+>>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
 =======
 >>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
                 "shasum": ""
@@ -564,6 +573,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2014-11-11 11:37:53"
 =======
             "time": "2014-01-01 16:43:57"
@@ -571,6 +581,9 @@
 =======
             "time": "2014-10-16 11:56:49"
 >>>>>>> parent of 755204c... ignored bower componetns
+=======
+            "time": "2014-11-11 11:37:53"
+>>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
 =======
             "time": "2014-11-11 11:37:53"
 >>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
@@ -2131,6 +2144,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
 =======
 >>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
             "version": "dev-master",
@@ -2148,6 +2164,7 @@
                 "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/eb82167d176eb40078469ef9408ff56fd32a5d66",
                 "reference": "eb82167d176eb40078469ef9408ff56fd32a5d66",
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             "version": "v1.1.2",
             "source": {
@@ -2164,6 +2181,8 @@
                 "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/df991c124a2212371443b586a1be767500036dee",
                 "reference": "df991c124a2212371443b586a1be767500036dee",
 >>>>>>> parent of 755204c... ignored bower componetns
+=======
+>>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
 =======
 >>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
                 "shasum": ""
@@ -2229,6 +2248,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2014-10-30 11:33:12"
 =======
             "time": "2013-07-19 00:03:27"
@@ -2236,6 +2256,9 @@
 =======
             "time": "2014-10-14 14:45:32"
 >>>>>>> parent of 755204c... ignored bower componetns
+=======
+            "time": "2014-10-30 11:33:12"
+>>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
 =======
             "time": "2014-10-30 11:33:12"
 >>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
@@ -2667,6 +2690,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "version": "dev-master",
 =======
             "version": "v3.0.2",
@@ -2677,6 +2701,9 @@
 =======
             "version": "dev-master",
 >>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
+=======
+            "version": "dev-master",
+>>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
             "target-dir": "Sensio/Bundle/DistributionBundle",
             "source": {
                 "type": "git",
@@ -2684,6 +2711,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
 =======
 >>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
                 "reference": "d18ef2b1e59ae2b69658a5958cf284e655ed9e0d"
@@ -2692,6 +2722,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sensiolabs/SensioDistributionBundle/zipball/d18ef2b1e59ae2b69658a5958cf284e655ed9e0d",
                 "reference": "d18ef2b1e59ae2b69658a5958cf284e655ed9e0d",
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
                 "reference": "67b34359f91c25ad36b960f66a287df0615d7c54"
@@ -2711,6 +2742,8 @@
 >>>>>>> parent of 755204c... ignored bower componetns
 =======
 >>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
+=======
+>>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
                 "shasum": ""
             },
             "require": {
@@ -2718,6 +2751,7 @@
                 "sensiolabs/security-checker": "~2.0",
                 "symfony/class-loader": "~2.2",
                 "symfony/form": "~2.2",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2730,6 +2764,9 @@
 =======
                 "symfony/framework-bundle": "~2.4",
 >>>>>>> parent of 755204c... ignored bower componetns
+=======
+                "symfony/framework-bundle": "~2.3",
+>>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
 =======
                 "symfony/framework-bundle": "~2.3",
 >>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
@@ -2766,6 +2803,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2014-11-19 11:48:00"
 =======
             "time": "2014-07-16 07:46:27"
@@ -2773,6 +2811,9 @@
 =======
             "time": "2014-09-24 14:47:46"
 >>>>>>> parent of 755204c... ignored bower componetns
+=======
+            "time": "2014-11-19 11:48:00"
+>>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
 =======
             "time": "2014-11-19 11:48:00"
 >>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
@@ -2934,6 +2975,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
 =======
 >>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
                 "reference": "6f57be5e5ac25a2c4b9abcf257174448882465d0"
@@ -2942,6 +2986,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sonata-project/SonataAdminBundle/zipball/6f57be5e5ac25a2c4b9abcf257174448882465d0",
                 "reference": "6f57be5e5ac25a2c4b9abcf257174448882465d0",
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
                 "reference": "e6ce0a612a4f9a8d6212c5bac9b958d7d754bfdb"
@@ -2959,6 +3004,8 @@
                 "url": "https://api.github.com/repos/sonata-project/SonataAdminBundle/zipball/069e610d4d729608bd8fcb03647529cb252993ef",
                 "reference": "069e610d4d729608bd8fcb03647529cb252993ef",
 >>>>>>> parent of 755204c... ignored bower componetns
+=======
+>>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
 =======
 >>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
                 "shasum": ""
@@ -3029,6 +3076,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2014-11-19 10:16:48"
 =======
             "time": "2014-10-09 09:19:38"
@@ -3036,6 +3084,9 @@
 =======
             "time": "2014-10-22 16:33:22"
 >>>>>>> parent of 755204c... ignored bower componetns
+=======
+            "time": "2014-11-19 10:16:48"
+>>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
 =======
             "time": "2014-11-19 10:16:48"
 >>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
@@ -3174,6 +3225,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
 =======
 >>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
                 "reference": "c4b5743bb66b28b97a9f87c18cc81930bb37a344"
@@ -3182,6 +3236,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sonata-project/SonataCoreBundle/zipball/c4b5743bb66b28b97a9f87c18cc81930bb37a344",
                 "reference": "c4b5743bb66b28b97a9f87c18cc81930bb37a344",
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
                 "reference": "6883f1fa0efbaa05cf670ee009514fd2d88d8ee8"
@@ -3199,6 +3254,8 @@
                 "url": "https://api.github.com/repos/sonata-project/SonataCoreBundle/zipball/9bbbbc0df4f1c489bfaf93cabe497326e5fdf318",
                 "reference": "9bbbbc0df4f1c489bfaf93cabe497326e5fdf318",
 >>>>>>> parent of 755204c... ignored bower componetns
+=======
+>>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
 =======
 >>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
                 "shasum": ""
@@ -3253,6 +3310,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2014-11-03 10:41:41"
 =======
             "time": "2014-10-06 13:03:25"
@@ -3260,6 +3318,9 @@
 =======
             "time": "2014-10-22 14:47:43"
 >>>>>>> parent of 755204c... ignored bower componetns
+=======
+            "time": "2014-11-03 10:41:41"
+>>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
 =======
             "time": "2014-11-03 10:41:41"
 >>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
@@ -3373,6 +3434,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
 =======
 >>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
                 "reference": "74e5033edf9c8ea37a3b289e2fb153c085fb4dcc"
@@ -3381,6 +3445,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sonata-project/SonataDoctrineORMAdminBundle/zipball/74e5033edf9c8ea37a3b289e2fb153c085fb4dcc",
                 "reference": "74e5033edf9c8ea37a3b289e2fb153c085fb4dcc",
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
                 "reference": "090c4a4b233b3e1af21b6ca54e2eb7be19233d9d"
@@ -3398,6 +3463,8 @@
                 "url": "https://api.github.com/repos/sonata-project/SonataDoctrineORMAdminBundle/zipball/b29af6623543a47f7950f27697e08e0dcba82173",
                 "reference": "b29af6623543a47f7950f27697e08e0dcba82173",
 >>>>>>> parent of 755204c... ignored bower componetns
+=======
+>>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
 =======
 >>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
                 "shasum": ""
@@ -3459,6 +3526,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2014-11-06 11:41:36"
 =======
             "time": "2014-10-04 22:02:48"
@@ -3466,6 +3534,9 @@
 =======
             "time": "2014-10-16 09:00:50"
 >>>>>>> parent of 755204c... ignored bower componetns
+=======
+            "time": "2014-11-06 11:41:36"
+>>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
 =======
             "time": "2014-11-06 11:41:36"
 >>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
@@ -4162,6 +4233,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "version": "dev-master",
 =======
             "version": "v2.3.0",
@@ -4170,6 +4242,9 @@
 =======
             "version": "v2.5.0",
 >>>>>>> parent of 755204c... ignored bower componetns
+=======
+            "version": "dev-master",
+>>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
 =======
             "version": "dev-master",
 >>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
@@ -4233,6 +4308,7 @@
                 "minification"
             ],
             "time": "2014-10-15 12:03:38"
+<<<<<<< HEAD
         },
         {
             "name": "symfony/icu",
@@ -4282,6 +4358,8 @@
                 "intl"
             ],
             "time": "2014-07-25 09:58:17"
+=======
+>>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
         },
         {
             "name": "symfony/monolog-bundle",
@@ -4621,6 +4699,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
 =======
 >>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
             "version": "dev-master",
@@ -4638,6 +4719,7 @@
                 "url": "https://api.github.com/repos/twigphp/Twig/zipball/b87cf88f88feee256c1e1ca85ec6677f38fcc238",
                 "reference": "b87cf88f88feee256c1e1ca85ec6677f38fcc238",
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             "version": "v1.16.0",
             "source": {
@@ -4654,6 +4736,8 @@
                 "url": "https://api.github.com/repos/fabpot/Twig/zipball/42f758d9fe2146d1f0470604fc05ee43580873fc",
                 "reference": "42f758d9fe2146d1f0470604fc05ee43580873fc",
 >>>>>>> parent of 755204c... ignored bower componetns
+=======
+>>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
 =======
 >>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
                 "shasum": ""
@@ -4702,6 +4786,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2014-11-10 14:48:15"
 =======
             "time": "2014-07-05 12:19:05"
@@ -4709,6 +4794,9 @@
 =======
             "time": "2014-10-17 12:53:44"
 >>>>>>> parent of 755204c... ignored bower componetns
+=======
+            "time": "2014-11-10 14:48:15"
+>>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
 =======
             "time": "2014-11-10 14:48:15"
 >>>>>>> parent of 0da20a6... wolf (reverted from commit 383a3da697c3f8665bf1df68122e124339e15784)
