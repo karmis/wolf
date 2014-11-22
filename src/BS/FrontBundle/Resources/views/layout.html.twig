@@ -26,7 +26,9 @@
         {{ parent() }}
 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="{{ asset(pCom~'/jquery/dist/jquery.min.js') }}"><\/script>')</script>
+        <script>window.jQuery || document.write('<script src="{{ asset(pRes~'/js/jquery.min.js') }}"><\/script>')</script>
+        <script type="text/javascript"
+                src="{{ asset(pRes~'/js/jquery-ui-1.11.2.custom/jquery-ui.min.js') }}"></script>
         <script type="text/javascript"
                 src="{{ asset(pCom~'/jquery.migrate/jquery-migrate-1.2.1.min.js') }}"></script>
         <script type="text/javascript"
@@ -35,8 +37,7 @@
                 src="{{ asset(pCom~'/cheet.js/cheet.js') }}"></script>
         <script type="text/javascript"
                 src="{{ asset(pCom~'/bootstrap/dist/js/bootstrap.min.js') }}"></script>
-        <script type="text/javascript"
-                src="{{ asset(pCom~'/jquery.easing/js/jquery.easing.min.js') }}"></script>
+
         <script type="text/javascript"
                 src="{{ asset(pCom~'/jquery-backstretch/jquery.backstretch.min.js') }}"></script>
         <script type="text/javascript"
@@ -49,18 +50,12 @@
                 src="{{ asset(pCom~'/wow/dist/wow.min.js') }}"></script>
         <script type="text/javascript"
                 src="{{ asset(pRes~'/js/jquery.bxslider-rahisified.js') }}"></script>
-        <!-- <script type="text/javascript"
-                src="{{ asset(pCom~'/jssor-slider/js/jssor.js') }}"></script> -->
-        <script type="text/javascript"
-                src="{{ asset(pCom~'/jssor-slider/js/jssor.slider.mini.js') }}"></script>
         <script type="text/javascript"
                 src="{{ asset(pRes~'/js/func.js') }}"></script>
         <script type="text/javascript"
                 src="{{ asset(pRes~'/js/init-func.js') }}"></script>
-
         <script type="text/javascript"
                 src="{{ asset(pRes~'/js/js.js') }}"></script>
-
 
 
     {% endblock %}
@@ -151,7 +146,5 @@
         </div><!-- .modal -->
 
         {#/CP#}
-
-
 
     {% endblock %}

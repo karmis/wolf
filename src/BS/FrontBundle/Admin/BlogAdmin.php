@@ -23,9 +23,10 @@ class BlogAdmin extends Admin
             ->add('published', null, array(
                 'label' => 'form.published'
             ))
-            ->add('slug', null, array(
-                'label' => 'form.slug'
-            ));
+            // ->add('slug', null, array(
+            //     'label' => 'form.slug'
+            // ))
+            ;
     }
 
     /**
@@ -37,9 +38,9 @@ class BlogAdmin extends Admin
             ->add('caption', null, array(
                 'label' => 'form.caption'
             ))
-            ->add('slug', null, array(
-                'label' => 'form.slug'
-            ))
+            // ->add('slug', null, array(
+            //     'label' => 'form.slug'
+            // ))
             ->add('smallContent', null, array(
                 'label' => 'form.smallContent'
             ))
@@ -66,9 +67,9 @@ class BlogAdmin extends Admin
             ->add('caption', null, array(
                 'label' => 'form.caption'
             ))
-            ->add('slug', null, array(
-                'label' => 'form.slug'
-            ))
+            // ->add('slug', null, array(
+            //     'label' => 'form.slug'
+            // ))
             ->add('smallContent', null, array(
                 'label' => 'form.smallContent'
             ))
@@ -140,9 +141,9 @@ class BlogAdmin extends Admin
             ->add('caption', null, array(
                 'label' => 'form.caption',
             ))
-            ->add('slug', null, array(
-                'label' => 'form.slug'
-            ))
+            // ->add('slug', null, array(
+            //     'label' => 'form.slug'
+            // ))
             ->add('smallContent', null, array(
                 'label' => 'form.smallContent'
             ))
