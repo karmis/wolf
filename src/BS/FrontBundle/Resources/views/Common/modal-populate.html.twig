@@ -1,11 +1,28 @@
 
 <div class="clearfix"></div>
 
-{% for photo in entity.photoGallery %}
+{# <ul class="modalBXSlider">
+    {% for photo in entity.photoGallery %}
+        <li>
 
-{#     <a>
-        <img src="{{ asset('uploads/gallery/'~photo) }}" width="117"/>
-    </a> #}
- 
+        </li>
+    {% endfor %}
+</ul> #}
 
-{% endfor %}
+{# <div class="fadelinks">
+	{% for photo in entity.photoGallery %}
+    	<a href="#"><img src="{{ asset('uploads/gallery/'~photo) }}" alt="{{ entity.caption }}" class="img-responsive lazy" /></a>
+    {% endfor %}
+</div> #}
+
+    <div class="slider-wrapper">
+        <div id="slider">
+			{% for key, photo in entity.photoGallery %}
+	            <div class="slide{{key}}">
+	                <img src="{{ asset('uploads/gallery/'~photo) }}" alt="{{ entity.caption }}" />
+	            </div>
+		    {% endfor %}
+        </div>
+        <div id="slider-direction-nav"></div>
+        <div id="slider-control-nav"></div>
+    </div>

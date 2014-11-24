@@ -1,7 +1,4 @@
 {% import _self as forms %}
-{% macro getConstant(entityName, constantName) -%}
-    {{ constant('BS\\FrontBundle\\Entity\\'~entityName~'::'~constantName) }}
-{%- endmacro %}
 <div class="grid-wrapper">
     {% if grids is defined and grids|length > 0 %}
         <!-- grid -->
@@ -30,9 +27,9 @@
                         </h5>
                         <p>
                             {% if entity.smallContent %}
-                                {{ entity.smallContent|default('Краткое описание')|truncate(350) }}
+                                {{ entity.smallContent|default('Краткое описание')|truncate(250) }}
                             {% else %}
-                                {{ entity.content|striptags|truncate(350) }}
+                                {{ entity.content|striptags|truncate(250) }}
                             {% endif %}
                         </p>
 

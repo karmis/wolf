@@ -22,4 +22,18 @@ $(function () {
         pager:false
 
     });
+
+
+    $('.modalBXSlider').bxSlider({
+      mode: 'fade',
+      auto: true,
+      autoControls: true,
+      pause: 2000
+    });
+
+
+    var slider = $('#slider').leanSlider({
+        directionNav: '#slider-direction-nav',
+        controlNav: '#slider-control-nav'
+    });
 });
