@@ -106,6 +106,10 @@ class Event
      */
     private $endDate;
 
+    public function getEntityType() {
+        return "EVENT";
+    }
+
     public function getUploadRootDir()
     {
         // absolute path to your directory where images must be saved

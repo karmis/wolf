@@ -108,6 +108,10 @@ class Blog
         return null === $this->photo ? null : '/'.$this->getUploadDir().'/'.$this->photo;
     }
 
+    public function getEntityType() {
+        return "BLOG";
+    }
+
     /**
      * Get id
      *
