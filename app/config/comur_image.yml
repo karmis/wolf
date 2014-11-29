@@ -1,7 +1,7 @@
 comur_image:
     config:
         cropped_image_dir: 'cropped'
-        thumbs_dir: 'thumbnails'
+        thumbs_dir: 'thumbnail'
         gallery_dir: 'gallery'
         media_lib_thumb_size: 150
         web_dirname: 'web'
