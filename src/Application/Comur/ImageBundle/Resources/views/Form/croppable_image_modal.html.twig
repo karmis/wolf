@@ -2,10 +2,10 @@
 {# trans_default_domain 'ComurImageBundle' #}
 
 {% block comur_image_scripts %}
-{% if include_jquery is not defined or include_jquery %}
+{#{% if include_jquery is not defined or include_jquery %}
     <!-- The jQuery script, can be omitted if jQuery is already included -->
     <script src="{{ asset('bundles/comurimage/js/jquery.js') }}"></script>
-{% endif %}
+{% endif %}#}
 <!-- The jQuery UI widget factory, can be omitted if jQuery UI is already included -->
 <script src="{{ asset('bundles/comurimage/js/jquery.ui.widget.js') }}"></script>
 <!-- The Iframe Transport is required for browsers without support for XHR file uploads -->
@@ -22,19 +22,24 @@
 
 {% block comur_image_stylesheets %}
 <link rel="stylesheet" href="{{ asset('bundles/comurimage/css/jquery.Jcrop.min.css') }}" type="text/css" />
-{% if include_bootstrap is not defined or include_bootstrap %}
+{#{% if include_bootstrap is not defined or include_bootstrap %}
     <!-- The bootstrap stylesheet, can be omitted if already inclided -->
     <link rel="stylesheet" href="{{ asset('bundles/comurimage/css/bootstrap.min.css') }}" type="text/css" />
-{% endif %}
+{% endif %}#}
 <link rel="stylesheet" href="{{ asset('bundles/comurimage/css/comur.image_bundle.css') }}" type="text/css" />
 {% endblock %}
 
-<div id="image_upload_modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="">
-    <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+
+
+
+<div id="image_upload_modal_bs" class="modal fade" data-backdrop="static" data-keyboard="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
         <h3>{% trans %}Insert Image{% endtrans %}</h3>
-    </div>
-    <div class="modal-body">
+      </div>
+      <div class="modal-body">
         <ul class="nav nav-pills" id="image_upload_tabs">
             <li class="active">
                 <a href="#upload-image" data-toggle="tab">{% trans %}Upload Image{% endtrans %}</a>
@@ -81,17 +86,20 @@
                 </div>
             </div>
         </div>
-        <div class="modal-footer">
+      </div>
+      <div class="modal-footer">
             <button class="btn" data-dismiss="modal" aria-hidden="true">{% trans %}Close{% endtrans %}</button>
             <span class="btn btn-success hidden" id="image_crop_go_now">
                 <i class="icon-white icon icon-fullscreen"></i>
                 {% trans %}Crop & Use !{% endtrans %}
             </span>
-        </div>
-    </div>
-</div>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
 <script>
-    $('#image_upload_modal').on({
+    $('#image_upload_modal_bs').on({
         'hide': destroyImageManager
     });
 </script>

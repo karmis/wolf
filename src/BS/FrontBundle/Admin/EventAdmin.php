@@ -41,9 +41,9 @@ class EventAdmin extends Admin
             ->add('caption', null, array(
                 'label' => 'form.caption'
             ))
-            ->add('slug', null, array(
-                'label' => 'form.slug'
-            ))
+            // ->add('slug', null, array(
+            //     'label' => 'form.slug'
+            // ))
             ->add('startDate', null, array(
                 'label' => 'form.startDate'
             ))
@@ -76,9 +76,9 @@ class EventAdmin extends Admin
             ->add('caption', null, array(
                 'label' => 'form.caption'
             ))
-            ->add('slug', null, array(
-                'label' => 'form.slug'
-            ))
+            // ->add('slug', null, array(
+            //     'label' => 'form.slug'
+            // ))
             ->add('startDate', 'date', array(
                 'label' => 'form.startDate',
                 'widget' => 'single_text',
@@ -168,9 +168,9 @@ class EventAdmin extends Admin
             ->add('caption', null, array(
                 'label' => 'form.caption',
             ))
-            ->add('slug', null, array(
-                'label' => 'form.slug'
-            ))
+            // ->add('slug', null, array(
+            //     'label' => 'form.slug'
+            // ))
             ->add('startDate', 'doctrine_orm_datetime_range', array(
                 'label' => 'form.startDate'
             ))

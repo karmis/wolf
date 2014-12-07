@@ -201,4 +201,7 @@ img.lazy {
     border: #fff 1px solid;
 }
 
-
+.modal-populate .panel>.panel-body div {
+    color: #fff !important;
+    font-size: 1.29vw !important;
+}

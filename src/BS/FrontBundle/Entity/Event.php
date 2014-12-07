@@ -41,17 +41,6 @@ class Event
 
     /**
      * @var string
-     * @Assert\Regex(
-     *     pattern="/^[A-Za-z0-9-]+$/",
-     *     match=true,
-     *     message="Адрес должен содержать только латинске буквы"
-     * )
-     * @ORM\Column(name="slug", type="string", length=255, unique=true)
-     */
-    private $slug;
-
-    /**
-     * @var string
      *
      * @ORM\Column(name="smallContent", type="text")
      */
@@ -162,29 +151,6 @@ class Event
     public function getCaption()
     {
         return $this->caption;
-    }
-
-    /**
-     * Set slug
-     *
-     * @param string $slug
-     * @return Event
-     */
-    public function setSlug($slug)
-    {
-        $this->slug = $slug;
-
-        return $this;
-    }
-
-    /**
-     * Get slug
-     *
-     * @return string 
-     */
-    public function getSlug()
-    {
-        return $this->slug;
     }
 
     /**
